@@ -1,0 +1,14 @@
+{
+    "id": "RaidToolkitExtension1",
+    "type": "RaidToolkitExtension1.Extension",
+    "asm": "RaidToolkitExtension1.dll",
+    "displayName": "RaidToolkitExtension1",
+    "description": "Extracts account data",
+    "codegen": {
+        "types": [
+            "^Client\\.Model\\.AppModel$",
+            "^Client\\.Model\\.Gameplay\\.StaticData\\.ClientStaticDataManager$",
+            "^Plarium\\.Common\\.Serialization\\.JsonMain"
+        ]
+    }
+}
