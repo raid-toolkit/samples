@@ -1,0 +1,13 @@
+{
+    "id": "WinForms_BackgroundService",
+    "type": "WinForms_BackgroundService.Extension",
+    "asm": "WinForms_BackgroundService.dll",
+    "displayName": "WinForms_BackgroundService",
+    "description": "Extracts account data",
+    "codegen": {
+        "types": [
+            "^Client\\.Model\\.AppModel$",
+            "^Client\\.Model\\.Gameplay\\.StaticData\\.ClientStaticDataManager$"
+        ]
+    }
+}

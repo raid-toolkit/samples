@@ -3,8 +3,8 @@
     <PropertyGroup>
         <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
         <TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
-        <AssemblyName>RaidToolkitExtension1</AssemblyName>
-        <RootNamespace>RaidToolkitExtension1</RootNamespace>
+        <AssemblyName>WinForms_BackgroundService</AssemblyName>
+        <RootNamespace>WinForms_BackgroundService</RootNamespace>
         <Platform>x64</Platform>
         <Platforms>x64</Platforms>
         <RuntimeIdentifier>win10-x64</RuntimeIdentifier>
@@ -12,23 +12,19 @@
         <!-- https://github.com/dotnet/maui/issues/5886#issuecomment-1123106200 -->
         <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
         <InstallRTKExtensionAfterBuild>false</InstallRTKExtensionAfterBuild>
-	    <Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Raid.Toolkit.Extensibility" Version="2.8.1-alpha" />
-        <PackageReference Include="Raid.Toolkit.Extensibility.Tasks" Version="2.8.1-alpha">
+        <PackageReference Include="Raid.Toolkit.Extensibility" Version="2.7.25" />
+        <PackageReference Include="Raid.Toolkit.Extensibility.Tasks" Version="2.7.25">
             <PrivateAssets>none</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
     </ItemGroup>
-	
-	<ItemGroup>
-        <RTKExtensionManifest Include="manifest.json" />
-    </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="_rtkCache\" />
+        <RTKExtensionManifest Include="manifest.json" />
     </ItemGroup>
 
 </Project>
